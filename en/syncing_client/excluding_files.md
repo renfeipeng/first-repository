@@ -3,8 +3,8 @@
 Sometimes you don't want to sync some files or folders inside a library. To achieve this, create a seafile-ignore.txt file in the root folder of a library. This special file specifies the files and folders that Seafile should not sync. Each line in a ignore.txt file specifies a pattern. The following pattern format are supported.
 
 1. A blank line matches no files.
-1. A line starting with # serves as a comment.
-1. Seafile supports wildcards in the pattern. For example, "foo/*" matches "foo/1" and "foo/hello". "foo/?" matches "foo/1" but not "foo/hello". Note that the wildcard character * recursively matches all the paths under a folder. For instance, "foo/*.html" matches "foo/a.html" and "foo/templates/b.html".
+1. A line starting with \# serves as a comment.
+1. Seafile supports wildcards in the pattern. For example, "foo/\*" matches "foo/1" and "foo/hello". "foo/?" matches "foo/1" but not "foo/hello". Note that the wildcard character \* recursively matches all the paths under a folder. For instance, "foo/\*.html" matches "foo/a.html" and "foo/templates/b.html".
 1. If the pattern ends with a slash, it would only match a folder. In other words, "foo/" will match a folder "foo" and paths underneath it, but will not match a regular file or a symbolic link "foo".
 1. If a pattern doesn't end with a slash or a wildcard, it would not match a folder. For example, "foo" can only match regular file "foo" or a symbolic link; while "foo/" and "foo\*" match a folder and paths under it.
 

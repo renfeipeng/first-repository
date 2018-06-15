@@ -55,9 +55,11 @@ To share a library to the entire organization: In Seafile web app, click the "Or
 ## Frequently Asked Questions
 
 **Can a share member share a folder or library to other users?**
+
 No. Only the owner of the library or folder can share it to others.
 
 **What happens if I change the name of a shared folder or file?**
+
 If you share a link, the link will become invalid once you change the name of the folder or file.
 
 If you share a folder, the share remains valid after the folder name is changed. But others still see the old name of the folder.
